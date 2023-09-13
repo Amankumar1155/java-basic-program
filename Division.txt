@@ -1,0 +1,18 @@
+package q11329;
+class Division
+{
+	public static void main(String args[])
+	{
+		try
+		{
+			int x=Integer.parseInt(args[0]);
+			int y=Integer.parseInt(args[1]);
+			int r=x/y;
+			System.out.println("Result = "+r);
+		}
+		catch (ArithmeticException e)
+		{
+			System.out.println("Exception caught : divide by zero occurred");
+		}
+	}
+}

@@ -1,0 +1,66 @@
+package q11264;
+class Student
+{
+	int id;
+	String name;
+	void setData(int i,String n)
+	{
+		id= i;
+		name = n;
+	}
+	void displayData()
+	{
+		System.out.println("Id : "+id);
+		System.out.println("Name : "+name);
+	}
+}
+class Marks extends Student
+{
+	float javaMarks,cMarks,cppMarks;
+	void setMarks(float j,float c,float cp)
+	{
+		javaMarks=j;
+		cMarks=c;
+		cppMarks=cp;
+	}
+	void displayMarks()
+	{
+		System.out.println("Java marks : "+javaMarks);
+		System.out.println("C marks : "+cMarks);
+		System.out.println("Cpp marks : "+cppMarks);
+	}
+}		
+class Result extends Marks
+{
+	float total,avg;
+	float compute()
+	{
+		total=javaMarks+cMarks+cppMarks;
+		avg=total/3;
+		return avg;
+	}
+	void showResult()
+	{
+		System.out.println("Total : "+total);
+		System.out.println("Avg : "+avg);
+	}
+}
+class MultilevelInheritanceDemo
+{
+	public static void main(String[] args)
+	{
+		Result ob=new Result();
+		int Id=Integer.parseInt(args[0]);
+		String Name=args[1];
+		float JavaMarks=Float.parseFloat(args[2]);
+		float CMarks=Float.parseFloat(args[3]);
+		float CppMarks=Float.parseFloat(args[4]);
+		ob.setData(Id,Name);
+		ob.displayData();
+		ob.setMarks(JavaMarks,CMarks,CppMarks);
+		ob.displayMarks();
+		ob.compute();
+		ob.showResult();
+	}
+}
+

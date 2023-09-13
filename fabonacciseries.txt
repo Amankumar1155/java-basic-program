@@ -1,0 +1,18 @@
+package q10896;
+
+public class FibonacciSeries{
+	
+	public static void main(String[] args){
+		int a = 0;
+		int b = 1;
+		int sum = 1;
+		System.out.print(a + " " + b);
+		int n = Integer.parseInt(args[0]);
+		while(sum<=n){
+			System.out.print(" "+sum);
+		a = b;
+		b = sum;
+		sum = a + b;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class TestOverloading1{
+	static int add(int a, int b, int c)
+	{
+		return a+b+c;
+	}
+	static int add(int a, int b){
+		return a+b;
+	}
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		System.out.print("Enter three numbers: ");
+		int a = in.nextInt();
+		int b = in.nextInt();
+		int c = in.nextInt();
+		System.out.println("Addition of two numbers: "+add(a,b));
+		System.out.println("Addition of three numbers: "+add(a,b,c));
+	}
+}

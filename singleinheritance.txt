@@ -1,0 +1,30 @@
+import java.util.*; 
+class A
+{
+	void test()
+	{
+		System.out.print("Enter the first class string: ");
+		Scanner sc=new Scanner(System.in);
+		String x= sc.nextLine();
+		System.out.println("First class string is: "+x);
+	}
+}
+class b extends A
+{
+	void test1()
+	{
+		System.out.print("Enter the second class string: ");
+		Scanner sc=new Scanner(System.in);
+		String y= sc.nextLine();
+		System.out.println("Second class string is: "+y);
+	}
+}
+class SingleInheritance
+{
+	public static void main(String[] args)
+{
+	b obj=new b();
+	obj.test();
+	obj.test1();
+}	
+}

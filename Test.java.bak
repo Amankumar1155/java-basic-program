@@ -1,0 +1,21 @@
+Import java.util.Scanner;
+class Test {
+ 
+    public static void main(String args[]) 
+	{
+        int age = 19;
+        String citizenStatus = "Indian";
+ 
+        if (age > 18) {
+            System.out.println("User is partially eligible");
+ 
+            if (citizenStatus == "Indian") {
+                System.out.println("User is eligible, since you match age & citizenship criteria");
+            } else {
+                System.out.println("You are eligible , since you are not the citizen");
+            }
+ 
+        }
+ 
+    }
+}

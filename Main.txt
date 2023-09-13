@@ -1,0 +1,19 @@
+package q116;
+import java.util.Scanner;
+class Main{
+	
+	void method(String str){
+		System.out.println("The entered string is: "+str);
+		
+	}
+	public static void main(String[] args){
+		System.out.print("Enter a string: ");
+		Scanner input = new Scanner(System.in);
+		String s = input.nextLine();
+		Main mn = new Main();
+		mn.method(s);
+		
+	}
+	
+	
+}
